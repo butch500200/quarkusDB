@@ -23,7 +23,7 @@ import jakarta.persistence.Id;
  * }
  */
 @Entity
-public class MyEntity {
+public class Customer {
     @Id
     @GeneratedValue
     public Long id;
