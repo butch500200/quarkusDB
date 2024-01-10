@@ -1,6 +1,6 @@
-package com.joseph.quarkus.panache;
+package com.joseph.quarkus.panache.repo;
 
-import com.Joseph.quarkus.panache.Publisher;
+import com.Joseph.quarkus.panache.model.Publisher;
 import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;

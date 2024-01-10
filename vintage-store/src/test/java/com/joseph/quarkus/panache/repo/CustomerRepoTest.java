@@ -1,6 +1,7 @@
-package com.josph.quarkus.jpa;
+package com.joseph.quarkus.panache.repo;
 
 import com.Joseph.quarkus.jpa.Customer;
+import com.Joseph.quarkus.panache.repo.CustomerRepo;
 import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
@@ -26,6 +27,7 @@ public class CustomerRepoTest {
 
 		customer = repo.findById(customer.getId());
 		assertEquals("name", customer.getFirstName());
+
 
 	}
 }
