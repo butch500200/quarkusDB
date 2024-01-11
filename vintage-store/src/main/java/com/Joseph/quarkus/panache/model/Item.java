@@ -9,6 +9,7 @@ import java.time.Instant;
 
 @Entity
 @Table(name = "t_items")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Item extends PanacheEntity {
 	@Column(length = 100, nullable = false)
 	public String title;
@@ -18,7 +19,7 @@ public class Item extends PanacheEntity {
 	public BigDecimal price;
 	@Column(name = "created_date")
 	public Instant createdDate = Instant.now();
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.PERSIST)
 	@JoinColumn(name = "artist_fk")
 	public Artist artist;
 

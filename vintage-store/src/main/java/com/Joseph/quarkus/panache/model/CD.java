@@ -10,7 +10,7 @@ import java.util.List;
 public class CD extends Item {
 	@Column(name = "music_Company")
 	public String musicCompany;
-	@Column(length = 15)
+	@Column(length = 100)
 	public String genre;
 	@OneToMany(mappedBy = "cd")
 	public List<Track> tracks;

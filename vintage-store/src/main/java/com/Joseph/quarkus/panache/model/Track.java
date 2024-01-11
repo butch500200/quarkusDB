@@ -1,6 +1,7 @@
 package com.Joseph.quarkus.panache.model;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import jakarta.json.bind.annotation.JsonbTransient;
 import jakarta.persistence.*;
 
 import java.time.Duration;
@@ -17,6 +18,7 @@ public class Track extends PanacheEntity {
 	public Instant createdDate = Instant.now();
 	@ManyToOne
 	@JoinColumn(name = "cd_fk")
+	@JsonbTransient
 	public CD cd;
 
 }

@@ -27,7 +27,7 @@ import java.time.Instant;
 public class Customer {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Column(name = "first_name", length = 50)
 	private String firstName;

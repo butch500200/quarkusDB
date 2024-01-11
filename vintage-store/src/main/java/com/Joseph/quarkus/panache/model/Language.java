@@ -1,5 +1,5 @@
 package com.Joseph.quarkus.panache.model;
 
 public enum Language {
-	ENGLISH, FRENCH, SPANISH, GERMAN
+	ENGLISH, FRENCH, SPANISH, PORTUGUESE, RUSSIAN, CHINESE, INDIAN, GERMAN, JAPANESE
 }

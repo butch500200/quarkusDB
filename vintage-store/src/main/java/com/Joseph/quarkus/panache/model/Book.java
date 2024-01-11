@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 @Entity
 public class Book extends Item {
-	@Column(length = 15)
+	@Column(length = 100)
 	public String isbn;
 	@Column(name = "nb_of_pages")
 	public Integer nbOfPages;
@@ -17,4 +17,6 @@ public class Book extends Item {
 	@ManyToOne
 	@JoinColumn(name = "publisher_fk")
 	public Publisher publisher;
+
+
 }
